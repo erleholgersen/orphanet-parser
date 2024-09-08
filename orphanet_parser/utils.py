@@ -1,6 +1,10 @@
 from typing import Any
 from pydantic.dataclasses import dataclass
 
+from typing import Literal
+
+VERSIONS = Literal["2024-07", "2023-12"]
+
 @dataclass
 class OrphanetFile:
     url: str

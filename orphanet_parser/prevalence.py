@@ -1,14 +1,18 @@
 import pandas as pd
 
-from .base import OrphanetParser
+from .base import BaseParser
 from .utils import get_optional_enum, get_list_field, OrphanetFile
 
-class PrevalenceParser(OrphanetParser):
+class PrevalenceParser(BaseParser):
     _DATA_FILES = {
         "2024-07": OrphanetFile(
             url="https://storage.googleapis.com/orphanet-parser-data/2024-07/en_product9_prev.xml",
             known_hash="md5:e47834377343211f3e71c829f635cc3b"
-            )
+            ),
+        "2023-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_product9_prev.xml",
+            known_hash="md5:02b822e722433e356da5878decf0377d"
+            ),
         }
     _LIST_FIELDS = ('Disorder', 'Prevalence')
 

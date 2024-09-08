@@ -1,15 +1,19 @@
 import pandas as pd
 
-from .base import OrphanetParser
+from .base import BaseParser
 from .utils import get_optional_enum, get_list_field, OrphanetFile
 from typing import Literal
 
 
-class AssociatedPhenotypesParser(OrphanetParser):
+class AssociatedPhenotypesParser(BaseParser):
     _DATA_FILES = {
         "2024-07": OrphanetFile(
             url="https://storage.googleapis.com/orphanet-parser-data/2024-07/en_product4.xml",
             known_hash="md5:679fd45c9de5d6057945a1c418ab81c2"
+            ),
+        "2023-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_product4.xml",
+            known_hash="md5:bbfa782de05adc36ca22ef2e94f345ce"
             )
         }
 

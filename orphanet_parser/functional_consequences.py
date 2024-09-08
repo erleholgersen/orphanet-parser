@@ -1,13 +1,17 @@
 import pandas as pd
 
-from .base import OrphanetParser
+from .base import BaseParser
 from .utils import get_optional_enum, get_list_field, OrphanetFile
 
-class FunctionalConsequencesParser(OrphanetParser):
+class FunctionalConsequencesParser(BaseParser):
     _DATA_FILES = {
         "2024-07": OrphanetFile(
             url="https://storage.googleapis.com/orphanet-parser-data/2024-07/en_funct_consequences.xml",
             known_hash="md5:098ece382cd2de1aa77fda99d42fe120"
+            ),
+        "2023-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_funct_consequences.xml",
+            known_hash="md5:02fa4d58a8dab5f005d1a5893af5c940"
             )
         }
     _LIST_FIELDS = ('DisorderDisabilityRelevance', 'DisabilityDisorderAssociation', )

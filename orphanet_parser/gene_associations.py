@@ -1,14 +1,18 @@
 import pandas as pd
 
-from .base import OrphanetParser
+from .base import BaseParser
 from .utils import get_optional_enum, get_list_field, OrphanetFile
 
-class GeneAssociationParser(OrphanetParser):
+class GeneAssociationParser(BaseParser):
     _DATA_FILES = {
         "2024-07": OrphanetFile(
             url="https://storage.googleapis.com/orphanet-parser-data/2024-07/en_product6.xml",
             known_hash="md5:958785cf6ae24bfe5bc662eec09be5dd"
-            )
+            ),
+        "2023-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_product6.xml",
+            known_hash="md5:5a9e4259fd4d37627f632e4d51f6e3a2"
+            ),
         }
     _LIST_FIELDS = ('Disorder', 'DisorderGeneAssociation', 'ExternalReference', 'Locus', 'Synonym', )
 

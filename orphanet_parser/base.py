@@ -2,15 +2,14 @@ import pandas as pd
 import xmltodict
 import pooch
 
-
+from .utils import VERSIONS
 from typing import Tuple
-from typing import Literal
 
-class OrphanetParser:
+class BaseParser:
 
     _DELIMETER = '; '
 
-    def __init__(self, version: Literal["2024-07"] = "2024-07"):
+    def __init__(self, version: VERSIONS = "2024-07"):
         self.version = version
         self.data_file = self._DATA_FILES[version]
 
