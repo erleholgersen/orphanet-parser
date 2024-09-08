@@ -1,0 +1,4 @@
+pandas
+pooch
+pydantic
+xmltodict
