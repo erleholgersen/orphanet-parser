@@ -1,0 +1,6 @@
+site_name: orphanet-parser
+theme: 
+  name: mkdocs
+  custom_dir: 'overrides' 
+extra_css:
+  - overrides/custom.css
