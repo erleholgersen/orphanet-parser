@@ -13,6 +13,14 @@ class GeneAssociationParser(BaseParser):
             url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_product6.xml",
             known_hash="md5:5a9e4259fd4d37627f632e4d51f6e3a2"
             ),
+        "2023-06": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-06/en_product6.xml",
+            known_hash="md5:1f369f4b1ad51e2eb57c98cc5141dc7a"
+            ),
+        "2022-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2022-12/en_product6.xml",
+            known_hash="md5:f48b2ee0cac0243bce88b95c6140ff95"
+            ),
         }
     _LIST_FIELDS = ('Disorder', 'DisorderGeneAssociation', 'ExternalReference', 'Locus', 'Synonym', )
 

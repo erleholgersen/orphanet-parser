@@ -13,6 +13,14 @@ class NaturalHistoryParser(BaseParser):
         "2023-12": OrphanetFile(
             url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_product9_ages.xml",
             known_hash="md5:a422899975163e185dccff8aae152321"
+            ),
+        "2023-06": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-06/en_product9_ages.xml",
+            known_hash="md5:b7db07882f25cba88e8a81da03ffb0f6"
+            ),
+        "2022-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2022-12/en_product9_ages.xml",
+            known_hash="md5:8635ee7c69ec7922df6da06b4cb2d741"
             )
         }
     _LIST_FIELDS = ('Disorder', 'AverageAgeOfOnset', 'TypeOfInheritance')

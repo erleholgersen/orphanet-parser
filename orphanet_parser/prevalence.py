@@ -13,6 +13,14 @@ class PrevalenceParser(BaseParser):
             url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_product9_prev.xml",
             known_hash="md5:02b822e722433e356da5878decf0377d"
             ),
+        "2023-06": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-06/en_product9_prev.xml",
+            known_hash="md5:21861f5863ddeb666e582778ad7fe73d"
+            ),
+        "2022-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2022-12/en_product9_prev.xml",
+            known_hash="md5:be9724d186f84ab6d1756305376dfd0c"
+            ),
         }
     _LIST_FIELDS = ('Disorder', 'Prevalence')
 

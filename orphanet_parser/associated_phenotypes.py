@@ -14,6 +14,14 @@ class AssociatedPhenotypesParser(BaseParser):
         "2023-12": OrphanetFile(
             url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_product4.xml",
             known_hash="md5:bbfa782de05adc36ca22ef2e94f345ce"
+            ),
+        "2023-06": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-06/en_product4.xml",
+            known_hash="md5:2f0156cab6944ccaa16b8f0904a61210"
+            ),
+        "2022-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2022-12/en_product4.xml",
+            known_hash="md5:e1cf53b104c72224f4d2bc825f9f9e70"
             )
         }
 

@@ -12,6 +12,14 @@ class FunctionalConsequencesParser(BaseParser):
         "2023-12": OrphanetFile(
             url="https://storage.googleapis.com/orphanet-parser-data/2023-12/en_funct_consequences.xml",
             known_hash="md5:02fa4d58a8dab5f005d1a5893af5c940"
+            ),
+        "2023-06": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2023-06/en_funct_consequences.xml",
+            known_hash="md5:55b2762a84aff8698b63923c2d3dd046"
+            ),
+        "2022-12": OrphanetFile(
+            url="https://storage.googleapis.com/orphanet-parser-data/2022-12/en_funct_consequences.xml",
+            known_hash="md5:63db63b24c466d7a20306425004f0f80"
             )
         }
     _LIST_FIELDS = ('DisorderDisabilityRelevance', 'DisabilityDisorderAssociation', )
