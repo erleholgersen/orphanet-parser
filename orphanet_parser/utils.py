@@ -3,7 +3,7 @@ from pydantic.dataclasses import dataclass
 
 from typing import Literal
 
-VERSIONS = Literal["2024-07", "2023-12"]
+VERSIONS = Literal["2024-07", "2023-12", "2023-06", "2022-12"]
 
 @dataclass
 class OrphanetFile:
