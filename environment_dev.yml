@@ -7,3 +7,4 @@ dependencies:
   - pytest
   - mkdocs-material
   - mkdocstrings-python
+  - pymdown-extensions

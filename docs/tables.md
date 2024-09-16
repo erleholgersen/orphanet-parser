@@ -1,10 +1,12 @@
-# Table Schemas
+# Data Schemas
+
+Details of data frames returned by orphanet-parser.
 
 ## Prevalence
 
 One row represents one prevalence estimate. A disorder may have multiple prevalence estimates.
 
-|Column                         |Description                        |Values               |
+|Column                         |Description                        |<div style="width:210px">Values</div>|
 |:------------------------------|:----------------------------------|:------------------|
 |orphacode                      |Unique identifier of disorder      |`int`|
 |expert_link                    |Link to Orphanet page for disase   |`str`|
@@ -21,20 +23,20 @@ One row represents one prevalence estimate. A disorder may have multiple prevale
 
 ## Natural history
 
+One row represents one disorder, and contains information on the age of onset and type of inheritance.
 
-
-|Column                         |Description                        |
-|:------------------------------|:----------------------------------|
-|orphacode                      |Unique identifier of disorder      |
-|expert_link                    |Link to Orphanet page for disase   |
-|disorder_name                  |Most generally accepted name of disorder   |
-|disorder_group                 |Hierarchical level of the clinical entity. Can be either "Group of disorders", "Disorder", or "Subtype of disorder"    |
-|average_age_of_onset           |Groups corresponding to estimated average age of onset: "Antenatal", "Neonatal", "Infancy", 
-"Childhood",
-"Adolescence", "Adult", "Elderly", "All ages" and "No data available". If more than one age of onset is provided, they are semicolon-separated and alphabetically sorted.
-|type_of_inheritance            |
+|Column                         |Description                        |<div style="width:210px">Values</div>|
+|:------------------------------|:----------------------------------|:----------------------|
+|orphacode                      |Unique identifier of disorder      |`int`                  |
+|expert_link                    |Link to Orphanet page for disase   |`str`                  |
+|disorder_name                  |Most generally accepted name of disorder   |`str`          |
+|disorder_group                 |Hierarchical level of the clinical entity |`"Group of disorders"`</br>`"Disorder"`</br> `"Subtype of disorder"` 
+|average_age_of_onset           |Groups corresponding to estimated average age of onset.</p>If more than one age of onset is provided, they are alphabetically sorted and semicolon-separated.|`"Antenatal"`</br>`"Neonatal"`</br>`"Infancy"`</br>`"Childhood"`</br>`"Adolescence"`</br>`"Adult"`</br>`"Elderly"`</br>`"All ages"`</br>`"No data available"`|
+|type_of_inheritance            |Type of inheritance.</p>If more than one age of onset is provided, they are alphabetically sorted and semicolon-separated.|`"Autosomal dominant"`</br>`"Autosomal recessive"`</br>`"Multigenic/multifactorial"`</br>`"Mitochondrial inheritance"`</br>`"X-linked dominant"`</br>`"X-linked recessive"`</br>`"Not applicable"`</br>`"No data available"`</br>`"Unknown"`|
 
 ## Gene associations
+
+One row represents one association between a gene and disorder.
 
 
 |Column                         |Description                        |
