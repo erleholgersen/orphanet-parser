@@ -1,6 +1,6 @@
 # Data Schemas
 
-Details of data frames returned by orphanet-parser. All data is parsed from XML files provided by Orphanet, and column names are preserved (as snake case) to the extent possible. 
+Details of data frames returned by orphanet-parser. All data is parsed from XML files provided by Orphanet, and column names are preserved (as snake case) to the extent possible. We currently do not sanitize the data, so some inconsistencies present in the Orphanet XML files persist (e.g. yes/no vs y/n for booleans).
 
 For more detailed information on the datasets, see the [Orphadata free access product description](https://www.orphadata.com/docs/OrphadataFreeAccessProductsDescription.pdf).
 
@@ -57,40 +57,41 @@ One row represents one association between a gene and disorder.
 
 ## Associated phenotypes
 
+One row represents one disorder/phenotype pair. A disorder may have multiple associated phenotypes.
+
 |Column                         |Description                        |<div style="width:210px">Values</div>|
 |:------------------------------|:----------------------------------|:------------------|
 |orphacode                      |Unique identifier of disorder      |`int`|
 |expert_link                    |Link to Orphanet page for disase   |`str`|
 |disorder_name                  |Most generally accepted name of disorder   |`str`|
 |disorder_group                 |Hierarchical level of the clinical entity.   |`"Group of disorders"`</br>`"Disorder"`</br> `"Subtype of disorder"` |
-|hpo_id                         |
-|hpo_term                       |
-|hpo_frequency                  |
-|diagnostic_criteria            |
-|source                         |
-|validation_status              |
-|online                         |
-|validation_date                |
+|hpo_id                         |Unique identifying number assigned by HPO to a given phenotype|`str`|
+|hpo_term                       |Preferred name of HPO phenotype|`str`|
+|hpo_frequency                  |Estimated frequency of phenotype within disorder|`"Obligate (100%)"`</br>`"Very frequent (99-80%)"`</br>`"Frequent (79-30%)"`</br>`"Occasional (29-5%)"`</br>`"Very rare (<4-1%)"`</br>`"Excluded (0%)"`|
+|diagnostic_criteria            |Indicator of phenotype being a pathognomonic sign or a diagnostic criterion in disorder   |`"Diagnostic criterion"`</br>`"Pathognomonic sign"`|
+|source                         |Reference                          |`str`|
 
 
 ## Functional consequences 
 
+One row represents one disorder/functional consequence pair. A disorder may have multiple functional consequences.
+
 |Column                         |Description                        |<div style="width:210px">Values</div>|
 |:------------------------------|:----------------------------------|:------------------|
 |orphacode                      |Unique identifier of disorder      |`int`|
 |expert_link                    |Link to Orphanet page for disase   |`str`|
 |disorder_name                  |Most generally accepted name of disorder   |`str`|
 |disorder_group                 |Hierarchical level of the clinical entity.   |`"Group of disorders"`</br>`"Disorder"`</br> `"Subtype of disorder"` |
-|disability                     |
-|frequence_disability           |
-|temporality_disability         |
-|severity_disability            |
-|loss_of_ability                |
-|type                           |
-|defined                        |
-|source_of_validation           |
-|specific_management            |
-|online                         |
-|annotation_date                |
-|status_disability              |
-|disability_category            |
+|disability                     |Name of disability|`str`|
+|disability_category            |Category of disability|`“Activity limitation/participation restriction”`</br>`“No functional disability”`</br>`“Not applicable”`|
+|reason_for_not_applicable      |If category is not applicable, the identified reason|`“Hypervariable functioning”`</br>`“Early death-causing disease”`</br>`“Not applicable for another reason”`|
+|frequence_disability           |Frequency of the functional consequence in the given population|`"very frequent"`</br>`"frequent"`</br>`"occasional"`|
+|temporality_disability         |Temporality of the functional consequence in the given population|`“permanent limitation/restriction”`</br> `“transient limitation/restriction”`</br>`“delayed acquisition”`|
+|severity_disability            |Severity of the functional consequence in the given population|`“low”`</br>`“moderate”`</br>`“severe”`</br>`“complete”`</br>`“Unspecified”`|
+|loss_of_ability                |Defined as a progressive and definitive loss of a skill or ability over the course of the disease|`"yes"`</br>`"no"`|
+|type                           |Disability (functional consequence) or environmental factor|`"Disability"`</br>`"Environmental factor"`|
+|defined                        |Indicator for severity, temporality, and frequency being defined|`"y"`</br>`"n"`|
+|source_of_validation           |Source of validation of the given clinical entity’s annotation|`str`|
+|specific_management            |If specific management protocol is known for the given disease, this field will indicate “y” for yes and all the annotations will have been conducted considering this specific management protocol.|`"y"`</br>`"n"`|
+|annotation_date                |Date of annotation|`str`|
+|status_disability              |Status of the validation of the given clinical entity’s annotation|`"Validated"`</br>`"Not validated"`|

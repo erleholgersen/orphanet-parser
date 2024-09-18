@@ -39,6 +39,8 @@ class FunctionalConsequencesParser(BaseParser):
                     'disorder_type': get_optional_enum(disorder, 'DisorderType'),
                     'disorder_group': get_optional_enum(disorder, 'DisorderGroup'),
                     'disability': get_optional_enum(association, 'Disability'),
+                    'disability_category': get_optional_enum(parent, 'DisabilityCategory'),
+                    'reason_for_not_applicable': get_optional_enum(parent, 'ReasonForNotApplicable'),
                     'frequence_disability': get_optional_enum(association, 'FrequenceDisability'),
                     'temporality_disability': get_optional_enum(association, 'TemporalityDisability'),
                     'severity_disability': get_optional_enum(association, 'SeverityDisability'),
@@ -47,10 +49,8 @@ class FunctionalConsequencesParser(BaseParser):
                     'defined': association['Defined'],
                     'source_of_validation': parent['SourceOfValidation'],
                     'specific_management': parent['SpecificManagement'],
-                    'online': parent['Online'],
                     'annotation_date': parent['AnnotationDate'],
                     'status_disability': get_optional_enum(parent, 'StatusDisability'),
-                    'disability_category': get_optional_enum(parent, 'DisabilityCategory')
                     })
     
         return pd.DataFrame(df)

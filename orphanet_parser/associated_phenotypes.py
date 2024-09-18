@@ -47,9 +47,6 @@ class AssociatedPhenotypesParser(BaseParser):
                     'hpo_frequency': get_optional_enum(association, 'HPOFrequency'),
                     'diagnostic_criteria': get_optional_enum(association, 'DiagnosticCriteria'),
                     'source': parent['Source'],
-                    'validation_status': parent['ValidationStatus'],
-                    'online': parent['Online'],
-                    'validation_date': parent['ValidationDate']
                     })
     
         return pd.DataFrame(df)
