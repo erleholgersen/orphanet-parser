@@ -98,10 +98,3 @@ smn1_func_consequences = pd.merge(smn1_disorders[['orphacode', 'disorder_name']]
 |       83419 | Proximal spinal muscular atrophy type 3 | http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&Expert=83419 | Clinical subtype | Subtype of disorder | Standing                                                                               |                        |                          |                       | y                 | Disability           | n         | Dr Emmanuelle SALORT CAMPANA[Expert] | n                     | y        | 2022-11-01 00:00:00.0 | Not validated       | Activity limitation/participation restriction |
 |       83419 | Proximal spinal muscular atrophy type 3 | http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&Expert=83419 | Clinical subtype | Subtype of disorder | Sitting                                                                                |                        |                          |                       | y                 | Disability           | n         | Dr Emmanuelle SALORT CAMPANA[Expert] | n                     | y        | 2022-11-01 00:00:00.0 | Not validated       | Activity limitation/participation restriction |
 
-
-
-## Visualizing prevalence estimates
-
-```
-prevalence_df = orphanet.prevalence()
-```
