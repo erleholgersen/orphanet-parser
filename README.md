@@ -4,3 +4,8 @@ Pythonic interface to key data from Orphanet. Data was obtained from the [Orphad
 
 The package only supports English-language data, and currently does not provide access to ontologies or disease linearization data. 
 
+## Installation
+
+```bash
+python setup.py install
+```
