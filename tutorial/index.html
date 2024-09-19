@@ -1,0 +1,923 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../tables/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Tutorials - orphanet-parser</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tutorials" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="orphanet-parser" class="md-header__button md-logo" aria-label="orphanet-parser" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            orphanet-parser
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tutorials
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="orphanet-parser" class="md-nav__button md-logo" aria-label="orphanet-parser" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    orphanet-parser
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to orphanet-parser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Schemas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-disorders-associated-with-a-gene" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding disorders associated with a gene
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizing-prevalence-estimates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualizing prevalence estimates
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-disorders-associated-with-a-gene" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding disorders associated with a gene
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizing-prevalence-estimates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualizing prevalence estimates
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="tutorials">Tutorials</h1>
+<p>The <code>OrphanetData</code> class provides access to all the individual data frames. By default, the latest version is used, currently <code>"2024-07"</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">orphanet_parser</span> <span class="kn">import</span> <span class="n">OrphanetData</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">orphanet</span> <span class="o">=</span> <span class="n">OrphanetData</span><span class="p">()</span>
+</span></code></pre></div>
+<p>The following sections walk through examples of analyses one might want to do with the orphanet-parser package. </p>
+<h2 id="finding-disorders-associated-with-a-gene">Finding disorders associated with a gene</h2>
+<p>Imagine we are interested in finding information about disorders associated with a particular disease. We can query the gene associations data by gene symbol.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">gene_df</span> <span class="o">=</span> <span class="n">orphanet</span><span class="o">.</span><span class="n">gene_associations</span><span class="p">()</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">smn1_disorders</span> <span class="o">=</span> <span class="n">gene_df</span><span class="p">[</span> <span class="n">gene_df</span><span class="p">[</span><span class="s1">&#39;gene_symbol&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;SMN1&#39;</span> <span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</span></code></pre></div>
+<p>In the case of SMN1, there are four associated disorders: Proximal spinal muscular atrophy type 1-4. These are all classified as subtypes of a disorder, and are caused by germline mutations in the SMN1 gene.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">smn1_disorders</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">orphacode</th>
+<th style="text-align: left;">expert_link</th>
+<th style="text-align: left;">disorder_name</th>
+<th style="text-align: left;">disorder_type</th>
+<th style="text-align: left;">disorder_group</th>
+<th style="text-align: left;">association_type</th>
+<th style="text-align: left;">association_status</th>
+<th style="text-align: left;">gene_symbol</th>
+<th style="text-align: left;">gene_name</th>
+<th style="text-align: left;">gene_type</th>
+<th style="text-align: left;">external_references</th>
+<th style="text-align: left;">source_of_validation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">83330</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83330</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 1</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Disease-causing germline mutation(s) in</td>
+<td style="text-align: left;">Assessed</td>
+<td style="text-align: left;">SMN1</td>
+<td style="text-align: left;">survival of motor neuron 1, telomeric</td>
+<td style="text-align: left;">gene with protein product</td>
+<td style="text-align: left;">Ensembl: ENSG00000172062; Genatlas: SMN1; HGNC: 11117; OMIM: 600354; Reactome: Q16637; SwissProt: Q16637; ClinVar: SMN1</td>
+<td style="text-align: left;">20301526[PMID]</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Disease-causing germline mutation(s) in</td>
+<td style="text-align: left;">Assessed</td>
+<td style="text-align: left;">SMN1</td>
+<td style="text-align: left;">survival of motor neuron 1, telomeric</td>
+<td style="text-align: left;">gene with protein product</td>
+<td style="text-align: left;">Ensembl: ENSG00000172062; Genatlas: SMN1; HGNC: 11117; OMIM: 600354; Reactome: Q16637; SwissProt: Q16637; ClinVar: SMN1</td>
+<td style="text-align: left;">20301526[PMID]</td>
+</tr>
+<tr>
+<td style="text-align: right;">83420</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83420</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 4</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Disease-causing germline mutation(s) in</td>
+<td style="text-align: left;">Assessed</td>
+<td style="text-align: left;">SMN1</td>
+<td style="text-align: left;">survival of motor neuron 1, telomeric</td>
+<td style="text-align: left;">gene with protein product</td>
+<td style="text-align: left;">Ensembl: ENSG00000172062; Genatlas: SMN1; HGNC: 11117; OMIM: 600354; Reactome: Q16637; SwissProt: Q16637; ClinVar: SMN1</td>
+<td style="text-align: left;">20301526[PMID]</td>
+</tr>
+<tr>
+<td style="text-align: right;">83418</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83418</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 2</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Disease-causing germline mutation(s) in</td>
+<td style="text-align: left;">Assessed</td>
+<td style="text-align: left;">SMN1</td>
+<td style="text-align: left;">survival of motor neuron 1, telomeric</td>
+<td style="text-align: left;">gene with protein product</td>
+<td style="text-align: left;">Ensembl: ENSG00000172062; Genatlas: SMN1; HGNC: 11117; OMIM: 600354; Reactome: Q16637; SwissProt: Q16637; ClinVar: SMN1</td>
+<td style="text-align: left;">20301526[PMID]</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>source_of_validation</code> column contains the reference for the association. In this case, all four associations were described in <a href="https://pubmed.ncbi.nlm.nih.gov/20301526/">GeneReviews</a>.</p>
+<p>The natural history dataset contains more information about the inheritance pattern and age of onset of each of these disorders. The <code>orphacode</code> is a unique disorder identifier and can be used for merging.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">natural_history_df</span> <span class="o">=</span> <span class="n">orphanet</span><span class="o">.</span><span class="n">natural_history</span><span class="p">()</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">smn1_natural_history</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">smn1_disorders</span><span class="p">[[</span><span class="s1">&#39;orphacode&#39;</span><span class="p">,</span> <span class="s1">&#39;disorder_name&#39;</span><span class="p">]],</span> <span class="n">natural_history_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="s1">&#39;1:1&#39;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">smn1_natural_history</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">orphacode</th>
+<th style="text-align: left;">disorder_name</th>
+<th style="text-align: left;">expert_link</th>
+<th style="text-align: left;">disorder_type</th>
+<th style="text-align: left;">disorder_group</th>
+<th style="text-align: left;">average_age_of_onset</th>
+<th style="text-align: left;">type_of_inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">83330</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 1</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83330</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Infancy; Neonatal</td>
+<td style="text-align: left;">Autosomal recessive</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Adolescent; Adult; Childhood; Infancy</td>
+<td style="text-align: left;">Autosomal recessive</td>
+</tr>
+<tr>
+<td style="text-align: right;">83420</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 4</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83420</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Adult</td>
+<td style="text-align: left;">Autosomal recessive</td>
+</tr>
+<tr>
+<td style="text-align: right;">83418</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 2</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83418</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Infancy</td>
+<td style="text-align: left;">Autosomal recessive</td>
+</tr>
+</tbody>
+</table>
+<p>The spinal muscular atrophy subtypes are numbered by the age of onset, with type 1 manifesting in infancy and type 4 in adulthood. All four subtypes have autosomal recessive inheritance.</p>
+<p>We can also get prevalence estimates for each by cross-referencing the prevalence dataset. A disorder may have multiple prevalence estimates, and each is represented by a row. </p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">prevalence_df</span> <span class="o">=</span> <span class="n">orphanet</span><span class="o">.</span><span class="n">prevalence</span><span class="p">()</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">smn1_prevalence</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">smn1_disorders</span><span class="p">[[</span><span class="s1">&#39;orphacode&#39;</span><span class="p">,</span> <span class="s1">&#39;disorder_name&#39;</span><span class="p">]],</span> <span class="n">prevalence_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="s1">&#39;1:m&#39;</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">smn1_prevalence</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">orphacode</th>
+<th style="text-align: left;">disorder_name</th>
+<th style="text-align: left;">expert_link</th>
+<th style="text-align: left;">disorder_type</th>
+<th style="text-align: left;">disorder_group</th>
+<th style="text-align: left;">prevalence_source</th>
+<th style="text-align: left;">prevalence_type</th>
+<th style="text-align: left;">prevalence_qualification</th>
+<th style="text-align: left;">prevalence_class</th>
+<th style="text-align: left;">prevalence_geographic</th>
+<th style="text-align: left;">prevalence_validation_status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">83330</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 1</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83330</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">ORPHANET</td>
+<td style="text-align: left;">Annual incidence</td>
+<td style="text-align: left;">Value and class</td>
+<td style="text-align: left;">1-9 / 1 000 000</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">Not yet validated</td>
+</tr>
+<tr>
+<td style="text-align: right;">83330</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 1</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83330</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">ORPHANET</td>
+<td style="text-align: left;">Point prevalence</td>
+<td style="text-align: left;">Class only</td>
+<td style="text-align: left;">1-9 / 100 000</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">Not yet validated</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">1483045[PMID]</td>
+<td style="text-align: left;">Prevalence at birth</td>
+<td style="text-align: left;">Value and class</td>
+<td style="text-align: left;">1-9 / 1 000 000</td>
+<td style="text-align: left;">Italy</td>
+<td style="text-align: left;">Validated</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">28676062[PMID]_ORPHANET</td>
+<td style="text-align: left;">Point prevalence</td>
+<td style="text-align: left;">Class only</td>
+<td style="text-align: left;">1-9 / 1 000 000</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">Validated</td>
+</tr>
+<tr>
+<td style="text-align: right;">83420</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 4</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83420</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">ORPHANET</td>
+<td style="text-align: left;">Annual incidence</td>
+<td style="text-align: left;">Class only</td>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">Validated</td>
+</tr>
+<tr>
+<td style="text-align: right;">83420</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 4</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83420</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">ORPHANET</td>
+<td style="text-align: left;">Point prevalence</td>
+<td style="text-align: left;">Class only</td>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">Validated</td>
+</tr>
+<tr>
+<td style="text-align: right;">83418</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 2</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83418</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">10677857[PMID]_1483045[PMID]</td>
+<td style="text-align: left;">Prevalence at birth</td>
+<td style="text-align: left;">Value and class</td>
+<td style="text-align: left;">1-9 / 100 000</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">Validated</td>
+</tr>
+<tr>
+<td style="text-align: right;">83418</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 2</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83418</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">28676062[PMID]_ORPHANET</td>
+<td style="text-align: left;">Point prevalence</td>
+<td style="text-align: left;">Class only</td>
+<td style="text-align: left;">1-9 / 100 000</td>
+<td style="text-align: left;">Worldwide</td>
+<td style="text-align: left;">Validated</td>
+</tr>
+</tbody>
+</table>
+<p>There are different types of prevalence estimates, as indicated by the <code>prevalence_type</code> column. </p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">phenotypes</span> <span class="o">=</span> <span class="n">orphanet</span><span class="o">.</span><span class="n">associated_phenotypes</span><span class="p">()</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">smn1_phenotypes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">smn1_disorders</span><span class="p">[[</span><span class="s1">&#39;orphacode&#39;</span><span class="p">,</span> <span class="s1">&#39;disorder_name&#39;</span><span class="p">]],</span> <span class="n">phenotypes</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="s1">&#39;1:m&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The functional consequences data contains information on clinician-reported consequences of the disease. </p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">func_consequences</span> <span class="o">=</span> <span class="n">orphanet</span><span class="o">.</span><span class="n">functional_consequences</span><span class="p">()</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">smn1_func_consequences</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">smn1_disorders</span><span class="p">[[</span><span class="s1">&#39;orphacode&#39;</span><span class="p">,</span> <span class="s1">&#39;disorder_name&#39;</span><span class="p">]],</span> <span class="n">func_consequences</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="s1">&#39;1:m&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">orphacode</th>
+<th style="text-align: left;">disorder_name</th>
+<th style="text-align: left;">expert_link</th>
+<th style="text-align: left;">disorder_type</th>
+<th style="text-align: left;">disorder_group</th>
+<th style="text-align: left;">disability</th>
+<th style="text-align: left;">frequence_disability</th>
+<th style="text-align: left;">temporality_disability</th>
+<th style="text-align: left;">severity_disability</th>
+<th style="text-align: left;">loss_of_ability</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">defined</th>
+<th style="text-align: left;">source_of_validation</th>
+<th style="text-align: left;">specific_management</th>
+<th style="text-align: left;">online</th>
+<th style="text-align: left;">annotation_date</th>
+<th style="text-align: left;">status_disability</th>
+<th style="text-align: left;">disability_category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Learning to write</td>
+<td style="text-align: left;">Occasional</td>
+<td style="text-align: left;">Acquisition delay</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Learning to write</td>
+<td style="text-align: left;">Occasional</td>
+<td style="text-align: left;">Permanent limitation</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Writing</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Speaking</td>
+<td style="text-align: left;">Occasional</td>
+<td style="text-align: left;">Permanent limitation</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Producing messages in sign language</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Producing nonverbal messages</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Writing messages</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Using communication devices</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Standing</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+<tr>
+<td style="text-align: right;">83419</td>
+<td style="text-align: left;">Proximal spinal muscular atrophy type 3</td>
+<td style="text-align: left;">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=83419</td>
+<td style="text-align: left;">Clinical subtype</td>
+<td style="text-align: left;">Subtype of disorder</td>
+<td style="text-align: left;">Sitting</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">Disability</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Dr Emmanuelle SALORT CAMPANA[Expert]</td>
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">2022-11-01 00:00:00.0</td>
+<td style="text-align: left;">Not validated</td>
+<td style="text-align: left;">Activity limitation/participation restriction</td>
+</tr>
+</tbody>
+</table>
+<h2 id="visualizing-prevalence-estimates">Visualizing prevalence estimates</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>prevalence_df = orphanet.prevalence()
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,797 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../api/">
+      
+      
+        <link rel="next" href="../tutorial/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Data Schemas - orphanet-parser</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-schemas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="orphanet-parser" class="md-header__button md-logo" aria-label="orphanet-parser" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            orphanet-parser
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Schemas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="orphanet-parser" class="md-nav__button md-logo" aria-label="orphanet-parser" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    orphanet-parser
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to orphanet-parser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data Schemas
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Data Schemas
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prevalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prevalence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#natural-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Natural history
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gene-associations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gene associations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associated-phenotypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associated phenotypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functional-consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional consequences
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prevalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prevalence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#natural-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Natural history
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gene-associations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gene associations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associated-phenotypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associated phenotypes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functional-consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional consequences
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="data-schemas">Data Schemas</h1>
+<p>Details of data frames returned by orphanet-parser. All data is parsed from XML files provided by Orphanet, and column names are preserved (as snake case) to the extent possible. We currently do not sanitize the data, so some inconsistencies present in the Orphanet XML files persist (e.g. yes/no vs y/n for booleans).</p>
+<p>For more detailed information on the datasets, see the <a href="https://www.orphadata.com/docs/OrphadataFreeAccessProductsDescription.pdf">Orphadata free access product description</a>.</p>
+<h2 id="prevalence">Prevalence</h2>
+<p>One row represents one prevalence estimate. A disorder may have multiple prevalence estimates.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;"><div style="width:210px">Values</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">orphacode</td>
+<td style="text-align: left;">Unique identifier of disorder</td>
+<td style="text-align: left;"><code>int</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">expert_link</td>
+<td style="text-align: left;">Link to Orphanet page for disase</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_name</td>
+<td style="text-align: left;">Most generally accepted name of disorder</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_group</td>
+<td style="text-align: left;">Hierarchical level of the clinical entity.</td>
+<td style="text-align: left;"><code>"Group of disorders"</code></br><code>"Disorder"</code></br> <code>"Subtype of disorder"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">prevalence_source</td>
+<td style="text-align: left;">Source of information for prevalence estimate</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">prevalence_type</td>
+<td style="text-align: left;">Type of prevalence estimate</td>
+<td style="text-align: left;"><code>"Point prevalence"</code></br><code>"birth prevalence"</code></br><code>"lifelong prevalence"</code></br><code>"incidence"</code></br><code>"cases/families"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">prevalence_qualification</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>"Value and Class"</code> </br><code>"Only class"</code> </br><code>"Case"</code> </br><code>"Family"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">prevalence_class</td>
+<td style="text-align: left;">Estimated prevalence</td>
+<td style="text-align: left;"><code>"&gt;1 / 1,000"</code></br><code>"1-5 / 10,000"</code></br><code>"6-9 / 10,000"</code></br><code>"1-9 / 100,000"</code></br><code>"1-9 / 1,000,000"</code></br><code>"&lt;1 /1,000,000"</code></br><code>"Not yet documented"</code></br><code>"Unknown"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">prevalence_geographic</td>
+<td style="text-align: left;">Geographic area of prevalence type</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">prevalence_validation_status</td>
+<td style="text-align: left;">Validation status</td>
+<td style="text-align: left;"><code>"Validated"</code></br><code>"Not yet validated"</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="natural-history">Natural history</h2>
+<p>One row represents one disorder, and contains information on the age of onset and type of inheritance.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;"><div style="width:210px">Values</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">orphacode</td>
+<td style="text-align: left;">Unique identifier of disorder</td>
+<td style="text-align: left;"><code>int</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">expert_link</td>
+<td style="text-align: left;">Link to Orphanet page for disase</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_name</td>
+<td style="text-align: left;">Most generally accepted name of disorder</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_group</td>
+<td style="text-align: left;">Hierarchical level of the clinical entity</td>
+<td style="text-align: left;"><code>"Group of disorders"</code></br><code>"Disorder"</code></br> <code>"Subtype of disorder"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">average_age_of_onset</td>
+<td style="text-align: left;">Groups corresponding to estimated average age of onset.</p>If more than one age of onset is provided, they are alphabetically sorted and semicolon-separated.</td>
+<td style="text-align: left;"><code>"Antenatal"</code></br><code>"Neonatal"</code></br><code>"Infancy"</code></br><code>"Childhood"</code></br><code>"Adolescence"</code></br><code>"Adult"</code></br><code>"Elderly"</code></br><code>"All ages"</code></br><code>"No data available"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">type_of_inheritance</td>
+<td style="text-align: left;">Type of inheritance.</p>If more than one age of onset is provided, they are alphabetically sorted and semicolon-separated.</td>
+<td style="text-align: left;"><code>"Autosomal dominant"</code></br><code>"Autosomal recessive"</code></br><code>"Multigenic/multifactorial"</code></br><code>"Mitochondrial inheritance"</code></br><code>"X-linked dominant"</code></br><code>"X-linked recessive"</code></br><code>"Not applicable"</code></br><code>"No data available"</code></br><code>"Unknown"</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="gene-associations">Gene associations</h2>
+<p>One row represents one association between a gene and disorder.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;"><div style="width:210px">Values</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">orphacode</td>
+<td style="text-align: left;">Unique identifier of disorder</td>
+<td style="text-align: left;"><code>int</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">expert_link</td>
+<td style="text-align: left;">Link to Orphanet page for disase</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_name</td>
+<td style="text-align: left;">Most generally accepted name of disorder</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_group</td>
+<td style="text-align: left;">Hierarchical level of the clinical entity</td>
+<td style="text-align: left;"><code>"Group of disorders"</code></br><code>"Disorder"</code></br> <code>"Subtype of disorder"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">association_type</td>
+<td style="text-align: left;">Gene-disease relationship</td>
+<td style="text-align: left;"><code>"Biomarker tested in"</code></br><code>"Candidate gene tested in"</code></br><code>"Disease-causing germline mutation(s) (gain of function) in"</code></br><code>"Disease-causing germline mutation(s) (loss of function) in"</code></br><code>"Disease-causing germline mutation(s) in"</code></br><code>"Disease-causing somatic mutation(s) in"</code></br><code>"Major susceptibility factor in"</code></br><code>"Modifying germline mutation in"</code></br><code>"Part of a fusion gene in"</code></br><code>"Role in the phenotype of"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">association_status</td>
+<td style="text-align: left;">Gene-disease association status</td>
+<td style="text-align: left;"><code>"Validated"</code></br><code>"Not validated"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">gene_symbol</td>
+<td style="text-align: left;">HGNC-approved gene symbol</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">gene_name</td>
+<td style="text-align: left;">Full gene name</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">gene_type</td>
+<td style="text-align: left;">Gene type</td>
+<td style="text-align: left;"><code>"gene with protein product"</code></br><code>"Non-coding RNA"</code></br><code>"Disorder-associated locus"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">external_references</td>
+<td style="text-align: left;">List of references in HGNC, OMIM, GenAtlas and UniProtKB, Ensembl, Reactome and IU-PHAR associated with a given gene</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">source_of_validation</td>
+<td style="text-align: left;">Listed reference for a given source associated with a gene</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="associated-phenotypes">Associated phenotypes</h2>
+<p>One row represents one disorder/phenotype pair. A disorder may have multiple associated phenotypes.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;"><div style="width:210px">Values</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">orphacode</td>
+<td style="text-align: left;">Unique identifier of disorder</td>
+<td style="text-align: left;"><code>int</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">expert_link</td>
+<td style="text-align: left;">Link to Orphanet page for disase</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_name</td>
+<td style="text-align: left;">Most generally accepted name of disorder</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_group</td>
+<td style="text-align: left;">Hierarchical level of the clinical entity.</td>
+<td style="text-align: left;"><code>"Group of disorders"</code></br><code>"Disorder"</code></br> <code>"Subtype of disorder"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">hpo_id</td>
+<td style="text-align: left;">Unique identifying number assigned by HPO to a given phenotype</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">hpo_term</td>
+<td style="text-align: left;">Preferred name of HPO phenotype</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">hpo_frequency</td>
+<td style="text-align: left;">Estimated frequency of phenotype within disorder</td>
+<td style="text-align: left;"><code>"Obligate (100%)"</code></br><code>"Very frequent (99-80%)"</code></br><code>"Frequent (79-30%)"</code></br><code>"Occasional (29-5%)"</code></br><code>"Very rare (&lt;4-1%)"</code></br><code>"Excluded (0%)"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">diagnostic_criteria</td>
+<td style="text-align: left;">Indicator of phenotype being a pathognomonic sign or a diagnostic criterion in disorder</td>
+<td style="text-align: left;"><code>"Diagnostic criterion"</code></br><code>"Pathognomonic sign"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">source</td>
+<td style="text-align: left;">Reference</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="functional-consequences">Functional consequences</h2>
+<p>One row represents one disorder/functional consequence pair. A disorder may have multiple functional consequences.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;"><div style="width:210px">Values</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">orphacode</td>
+<td style="text-align: left;">Unique identifier of disorder</td>
+<td style="text-align: left;"><code>int</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">expert_link</td>
+<td style="text-align: left;">Link to Orphanet page for disase</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_name</td>
+<td style="text-align: left;">Most generally accepted name of disorder</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disorder_group</td>
+<td style="text-align: left;">Hierarchical level of the clinical entity.</td>
+<td style="text-align: left;"><code>"Group of disorders"</code></br><code>"Disorder"</code></br> <code>"Subtype of disorder"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disability</td>
+<td style="text-align: left;">Name of disability</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">disability_category</td>
+<td style="text-align: left;">Category of disability</td>
+<td style="text-align: left;"><code>“Activity limitation/participation restriction”</code></br><code>“No functional disability”</code></br><code>“Not applicable”</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">reason_for_not_applicable</td>
+<td style="text-align: left;">If category is not applicable, the identified reason</td>
+<td style="text-align: left;"><code>“Hypervariable functioning”</code></br><code>“Early death-causing disease”</code></br><code>“Not applicable for another reason”</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">frequence_disability</td>
+<td style="text-align: left;">Frequency of the functional consequence in the given population</td>
+<td style="text-align: left;"><code>"very frequent"</code></br><code>"frequent"</code></br><code>"occasional"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">temporality_disability</td>
+<td style="text-align: left;">Temporality of the functional consequence in the given population</td>
+<td style="text-align: left;"><code>“permanent limitation/restriction”</code></br> <code>“transient limitation/restriction”</code></br><code>“delayed acquisition”</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">severity_disability</td>
+<td style="text-align: left;">Severity of the functional consequence in the given population</td>
+<td style="text-align: left;"><code>“low”</code></br><code>“moderate”</code></br><code>“severe”</code></br><code>“complete”</code></br><code>“Unspecified”</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">loss_of_ability</td>
+<td style="text-align: left;">Defined as a progressive and definitive loss of a skill or ability over the course of the disease</td>
+<td style="text-align: left;"><code>"yes"</code></br><code>"no"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">type</td>
+<td style="text-align: left;">Disability (functional consequence) or environmental factor</td>
+<td style="text-align: left;"><code>"Disability"</code></br><code>"Environmental factor"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">defined</td>
+<td style="text-align: left;">Indicator for severity, temporality, and frequency being defined</td>
+<td style="text-align: left;"><code>"y"</code></br><code>"n"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">source_of_validation</td>
+<td style="text-align: left;">Source of validation of the given clinical entity’s annotation</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">specific_management</td>
+<td style="text-align: left;">If specific management protocol is known for the given disease, this field will indicate “y” for yes and all the annotations will have been conducted considering this specific management protocol.</td>
+<td style="text-align: left;"><code>"y"</code></br><code>"n"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">annotation_date</td>
+<td style="text-align: left;">Date of annotation</td>
+<td style="text-align: left;"><code>str</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">status_disability</td>
+<td style="text-align: left;">Status of the validation of the given clinical entity’s annotation</td>
+<td style="text-align: left;"><code>"Validated"</code></br><code>"Not validated"</code></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
